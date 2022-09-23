@@ -1,0 +1,15 @@
+C:\Users\Nikkie\Documents\school\coding\Fiary-Interpreter\bin\Debug\net6.0\FiaryInterpreter.exe
+C:\Users\Nikkie\Documents\school\coding\Fiary-Interpreter\bin\Debug\net6.0\FiaryInterpreter.deps.json
+C:\Users\Nikkie\Documents\school\coding\Fiary-Interpreter\bin\Debug\net6.0\FiaryInterpreter.runtimeconfig.json
+C:\Users\Nikkie\Documents\school\coding\Fiary-Interpreter\bin\Debug\net6.0\FiaryInterpreter.dll
+C:\Users\Nikkie\Documents\school\coding\Fiary-Interpreter\bin\Debug\net6.0\FiaryInterpreter.pdb
+C:\Users\Nikkie\Documents\school\coding\Fiary-Interpreter\obj\Debug\net6.0\FiaryInterpreter.csproj.AssemblyReference.cache
+C:\Users\Nikkie\Documents\school\coding\Fiary-Interpreter\obj\Debug\net6.0\FiaryInterpreter.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Nikkie\Documents\school\coding\Fiary-Interpreter\obj\Debug\net6.0\FiaryInterpreter.AssemblyInfoInputs.cache
+C:\Users\Nikkie\Documents\school\coding\Fiary-Interpreter\obj\Debug\net6.0\FiaryInterpreter.AssemblyInfo.cs
+C:\Users\Nikkie\Documents\school\coding\Fiary-Interpreter\obj\Debug\net6.0\FiaryInterpreter.csproj.CoreCompileInputs.cache
+C:\Users\Nikkie\Documents\school\coding\Fiary-Interpreter\obj\Debug\net6.0\FiaryInterpreter.dll
+C:\Users\Nikkie\Documents\school\coding\Fiary-Interpreter\obj\Debug\net6.0\refint\FiaryInterpreter.dll
+C:\Users\Nikkie\Documents\school\coding\Fiary-Interpreter\obj\Debug\net6.0\FiaryInterpreter.pdb
+C:\Users\Nikkie\Documents\school\coding\Fiary-Interpreter\obj\Debug\net6.0\FiaryInterpreter.genruntimeconfig.cache
+C:\Users\Nikkie\Documents\school\coding\Fiary-Interpreter\obj\Debug\net6.0\ref\FiaryInterpreter.dll

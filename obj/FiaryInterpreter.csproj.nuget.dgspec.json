@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Nikkie\\Documents\\school\\coding\\FiaryInterpreter\\FiaryInterpreter.csproj": {}
+    "C:\\Users\\Nikkie\\Documents\\school\\coding\\Fiary-Interpreter\\FiaryInterpreter.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Nikkie\\Documents\\school\\coding\\FiaryInterpreter\\FiaryInterpreter.csproj": {
+    "C:\\Users\\Nikkie\\Documents\\school\\coding\\Fiary-Interpreter\\FiaryInterpreter.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Nikkie\\Documents\\school\\coding\\FiaryInterpreter\\FiaryInterpreter.csproj",
+        "projectUniqueName": "C:\\Users\\Nikkie\\Documents\\school\\coding\\Fiary-Interpreter\\FiaryInterpreter.csproj",
         "projectName": "FiaryInterpreter",
-        "projectPath": "C:\\Users\\Nikkie\\Documents\\school\\coding\\FiaryInterpreter\\FiaryInterpreter.csproj",
+        "projectPath": "C:\\Users\\Nikkie\\Documents\\school\\coding\\Fiary-Interpreter\\FiaryInterpreter.csproj",
         "packagesPath": "C:\\Users\\Nikkie\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Nikkie\\Documents\\school\\coding\\FiaryInterpreter\\obj\\",
+        "outputPath": "C:\\Users\\Nikkie\\Documents\\school\\coding\\Fiary-Interpreter\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Nikkie\\AppData\\Roaming\\NuGet\\NuGet.Config"
