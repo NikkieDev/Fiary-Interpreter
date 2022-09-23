@@ -1,0 +1,7 @@
+namespace Fiary
+{
+    class Converter
+    {
+        
+    }
+}
