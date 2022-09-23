@@ -8,6 +8,7 @@ namespace Fiary
         internal void ParseFile(String FileName) // Possible filetype later
         {
             String FileData = "";
+            Lexer LexerObj = new Lexer();
 
             try
             {
@@ -23,8 +24,7 @@ namespace Fiary
                 return;
             }
 
-            
-
+            LexerObj.Interpret(FileDataArray);
         }
     }
 }
