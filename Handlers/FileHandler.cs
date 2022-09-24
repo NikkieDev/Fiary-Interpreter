@@ -6,7 +6,7 @@ namespace Fiary
     class FileHandler
     {
         private static ErrorHandler ErrHandler = new ErrorHandler();
-        internal void ParseFile(String FileName) // Possible filetype later
+        async internal Task ParseFile(String FileName) // Possible filetype later
         {
             String FileData = "";
             Lexer LexerObj = new Lexer();
@@ -17,7 +17,7 @@ namespace Fiary
             } catch (FileNotFoundException e)
             {
                 Console.WriteLine($"File: \"{FileName}\" couldn't be found.");
-                ErrHandler.AddErr(e);
+                await ErrHandler.AddErr(e);
             }
             
             if (FileData == "")

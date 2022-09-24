@@ -6,20 +6,21 @@ namespace Fiary
     {
         async static Task Main(String[] args)
         {
-            String[] ConfirmedArgs = args;
-
+            ErrorHandler ErrorHandlerObj = new ErrorHandler();
             FileHandler FileHandlerObj = new FileHandler();
             Files FilesObj = new Files();
 
             await FilesObj.Initialize();
 
-            if (ConfirmedArgs == null)
+            try
             {
-                Console.WriteLine("No file selected");
-                return;
+                await FileHandlerObj.ParseFile(args[0]);
             }
-
-            FileHandlerObj.ParseFile(ConfirmedArgs[0]);
+            catch (Exception e)
+            {
+                await ErrorHandlerObj.AddErr(e);
+                ErrorHandlerObj.CreateErrLog();
+            }
         }
     }
 }

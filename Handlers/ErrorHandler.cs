@@ -4,12 +4,13 @@ namespace Fiary
 {
     class ErrorHandler
     {
-        private static List<dynamic> ErrorList = new List<dynamic>();
-        internal void AddErr(dynamic Error)
+        private static List<String> ErrorList = new List<String>();
+        async internal Task AddErr(Exception Error)
         {
-            ErrorList.Add(Error);
+            await Task.Run(() => ErrorList.Add(Error.ToString()));
+            return;
         }
-        async internal Task CreateErrLog()
+        internal void CreateErrLog()
         {
             String Dir = Environment.GetFolderPath(Environment.SpecialFolder.ApplicationData) + "/NikkieDev Software/FSF/errors";
             int i = 0;
@@ -20,13 +21,14 @@ namespace Fiary
                 i++;
             }
 
-            var _File = File.Create($"errorlog{i}.txt");
+            var _File = File.Create($"{Dir}/errorlog{i}.txt");
             _File.Close();
             
             for (int j = 0; j < ErrorList.Count; j++)
             {
-                await File.AppendAllTextAsync($"{Dir}/errorlog{i}.txt", ErrorList[i]);
+                File.AppendAllText($"{Dir}/errorlog{i}.txt", ErrorList[i]);
             }
+            return;
         }
 
         // loop through amount of files. add i to filename
