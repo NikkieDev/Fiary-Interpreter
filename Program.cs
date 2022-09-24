@@ -4,20 +4,22 @@ namespace Fiary
 {
     class Program
     {
-        static void Main(String[] args)
+        async static Task Main(String[] args)
         {
+            String[] ConfirmedArgs = args;
+
             FileHandler FileHandlerObj = new FileHandler();
             Files FilesObj = new Files();
 
-            FilesObj.Initialize();
+            await FilesObj.Initialize();
 
-            if (args[0] == null)
+            if (ConfirmedArgs == null)
             {
                 Console.WriteLine("No file selected");
                 return;
             }
 
-            FileHandlerObj.ParseFile(args[0]);
+            FileHandlerObj.ParseFile(ConfirmedArgs[0]);
         }
     }
 }

@@ -1,13 +1,14 @@
 using System.IO;
+using ND_AppData;
 
 namespace Fiary
 {
     class Files
     {
-        private static String Dir = Environment.GetFolderPath(Environment.SpecialFolder.ApplicationData) + "/NikkieDev Software/FSF/errors";
         async internal Task Initialize()
         {
-            
+            String[] Folders = {"FSF", "FSF/errors"};
+            await AppDataFolders.Initialize(Folders);
         }
     }
 }

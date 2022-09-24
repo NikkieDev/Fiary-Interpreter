@@ -1,37 +1,68 @@
 {
   "version": 3,
   "targets": {
-    "net6.0": {}
+    "net6.0": {
+      "ND_AppData/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "compile": {
+          "bin/placeholder/ND_AppData.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/ND_AppData.dll": {}
+        }
+      }
+    }
   },
-  "libraries": {},
+  "libraries": {
+    "ND_AppData/1.0.0": {
+      "type": "project",
+      "path": "../../C#/codebase/appdata_folders/ND_AppData.csproj",
+      "msbuildProject": "../../C#/codebase/appdata_folders/ND_AppData.csproj"
+    }
+  },
   "projectFileDependencyGroups": {
-    "net6.0": []
+    "net6.0": [
+      "ND_AppData >= 1.0.0"
+    ]
   },
   "packageFolders": {
-    "C:\\Users\\Nikkie\\.nuget\\packages\\": {}
+    "C:\\Users\\niksc\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Nikkie\\Documents\\school\\coding\\Fiary-Interpreter\\FiaryInterpreter.csproj",
+      "projectUniqueName": "E:\\Coding\\projects\\Fiary-Interpreter\\FiaryInterpreter.csproj",
       "projectName": "FiaryInterpreter",
-      "projectPath": "C:\\Users\\Nikkie\\Documents\\school\\coding\\Fiary-Interpreter\\FiaryInterpreter.csproj",
-      "packagesPath": "C:\\Users\\Nikkie\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Nikkie\\Documents\\school\\coding\\Fiary-Interpreter\\obj\\",
+      "projectPath": "E:\\Coding\\projects\\Fiary-Interpreter\\FiaryInterpreter.csproj",
+      "packagesPath": "C:\\Users\\niksc\\.nuget\\packages\\",
+      "outputPath": "E:\\Coding\\projects\\Fiary-Interpreter\\obj\\",
       "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+      ],
       "configFilePaths": [
-        "C:\\Users\\Nikkie\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        "C:\\Users\\niksc\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
         "net6.0"
       ],
       "sources": {
-        "https://api.nuget.org/v3/index.json": {}
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "https://api.nuget.org/v3/index.json": {},
+        "https://www.myget.org/F/discord-net-labs/api/v3/index.json": {}
       },
       "frameworks": {
         "net6.0": {
           "targetAlias": "net6.0",
-          "projectReferences": {}
+          "projectReferences": {
+            "E:\\Coding\\C#\\codebase\\appdata_folders\\ND_AppData.csproj": {
+              "projectPath": "E:\\Coding\\C#\\codebase\\appdata_folders\\ND_AppData.csproj"
+            }
+          }
         }
       },
       "warningProperties": {
@@ -49,8 +80,7 @@
           "net47",
           "net471",
           "net472",
-          "net48",
-          "net481"
+          "net48"
         ],
         "assetTargetFallback": true,
         "warn": true,
@@ -59,7 +89,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.400\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.300\\RuntimeIdentifierGraph.json"
       }
     }
   }
