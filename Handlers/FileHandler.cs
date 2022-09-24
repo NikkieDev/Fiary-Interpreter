@@ -5,6 +5,7 @@ namespace Fiary
 {
     class Handler
     {
+        
         internal void ParseFile(String FileName) // Possible filetype later
         {
             String FileData = "";
