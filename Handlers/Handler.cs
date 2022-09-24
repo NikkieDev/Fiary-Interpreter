@@ -16,6 +16,7 @@ namespace Fiary
             } catch (FileNotFoundException e)
             {
                 Console.WriteLine($"File: \"{FileName}\" couldn't be found.");
+                ErrHandler.AddErr(e);
             }
             
             if (FileData == "")
@@ -24,6 +25,14 @@ namespace Fiary
                 return;
             }
 
+            List<String> FileDataList = new List<String>();
+
+            for (int i = 0; i < FileData.Length; i++)
+            {
+                FileDataList.Add(FileData[i].ToString());
+            }
+
+            String[] FileDataArray = FileDataList.ToArray();
             LexerObj.Interpret(FileDataArray);
         }
     }
