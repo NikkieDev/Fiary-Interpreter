@@ -19,7 +19,7 @@ namespace Fiary
             catch (Exception e)
             {
                 await ErrorHandlerObj.AddErr(e);
-                ErrorHandlerObj.CreateErrLog();
+                Console.WriteLine(ErrorHandlerObj.CreateErrLog());
             }
         }
     }

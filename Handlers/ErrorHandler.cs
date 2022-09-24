@@ -10,7 +10,7 @@ namespace Fiary
             await Task.Run(() => ErrorList.Add(Error.ToString()));
             return;
         }
-        internal void CreateErrLog()
+        internal String CreateErrLog()
         {
             String Dir = Environment.GetFolderPath(Environment.SpecialFolder.ApplicationData) + "/NikkieDev Software/FSF/errors";
             int i = 0;
@@ -26,9 +26,9 @@ namespace Fiary
             
             for (int j = 0; j < ErrorList.Count; j++)
             {
-                File.AppendAllText($"{Dir}/errorlog{i}.txt", ErrorList[i]);
+                File.AppendAllText($"{Dir}/errorlog{i}.txt", ErrorList[j]);
             }
-            return;
+            return $"Created error log file at: \"{Dir}/errorlog{i}.txt\"";
         }
 
         // loop through amount of files. add i to filename
