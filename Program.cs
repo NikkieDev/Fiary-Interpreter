@@ -6,7 +6,10 @@ namespace Fiary
     {
         static void Main(String[] args)
         {
-            Handler handler = new Handler();
+            FileHandler FileHandlerObj = new FileHandler();
+            Files FilesObj = new Files();
+
+            FilesObj.Initialize();
 
             if (args[0] == null)
             {
@@ -14,7 +17,7 @@ namespace Fiary
                 return;
             }
 
-            handler.ParseFile(args[0]);
+            FileHandlerObj.ParseFile(args[0]);
         }
     }
 }

@@ -3,7 +3,7 @@ using System.IO;
 
 namespace Fiary
 {
-    class Handler
+    class FileHandler
     {
         private static ErrorHandler ErrHandler = new ErrorHandler();
         internal void ParseFile(String FileName) // Possible filetype later
