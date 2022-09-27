@@ -1,5 +1,5 @@
 using System.IO;
-using ND_AppData;
+using ND_Data;
 
 namespace Fiary
 {
@@ -8,7 +8,7 @@ namespace Fiary
         async internal Task Initialize()
         {
             String[] Folders = {"FSF", "FSF/errors"};
-            await AppDataFolders.Initialize(Folders);
+            await AppDataFolder.Initialize(Folders);
         }
     }
 }

@@ -10,7 +10,7 @@ namespace Fiary
 
             for (int i = 0; i < InterpretedList.Count; i++)
             {
-                _char = InterpretedList[i];    
+                _char = InterpretedList[i];
             }
 
             String[] InterpretedData = InterpretedList.ToArray();

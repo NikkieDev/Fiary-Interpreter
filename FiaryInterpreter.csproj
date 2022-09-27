@@ -1,7 +1,8 @@
 <Project Sdk="Microsoft.NET.Sdk">
-
   <ItemGroup>
-    <ProjectReference Include="..\..\C#\codebase\appdata_folders\ND_AppData.csproj" />
+    <Reference Include="ND_Data">
+      <HintPath>libs/ND_Data.dll</HintPath>
+    </Reference>
   </ItemGroup>
 
   <PropertyGroup>
