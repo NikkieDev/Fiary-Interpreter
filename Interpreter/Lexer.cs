@@ -8,9 +8,9 @@ namespace Fiary
         {
             List<String> InterpretedData = new List<String>();
             
-            for (int i = 0; i < Data.Length; i++)
+            foreach (String line in Data)
             {
-                
+                Console.WriteLine(line[0]);
             }
 
             return InterpretedData;

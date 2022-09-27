@@ -8,19 +8,21 @@ namespace Fiary
         private static ErrorHandler ErrHandler = new ErrorHandler();
         async internal Task ParseFile(String FileName) // Possible filetype later
         {
-            String FileData = "";
             Lexer LexerObj = new Lexer();
+            List<String> FileData = new List<String>();
 
             try
             {
-                FileData = File.ReadAllText(FileName);
+                String[] DataArray = File.ReadAllLines(FileName);
+                for (int i = 0; i < DataArray.Length; i++)
+                    FileData.Add(DataArray[i]);
             } catch (FileNotFoundException e)
             {
                 Console.WriteLine($"File: \"{FileName}\" couldn't be found.");
                 await ErrHandler.AddErr(e);
             }
             
-            if (FileData == "")
+            if (FileData == null)
             {
                 Console.WriteLine($"File: \"{FileName}\" does not contain any data.");
                 return;
@@ -28,13 +30,7 @@ namespace Fiary
 
             List<String> FileDataList = new List<String>();
 
-            for (int i = 0; i < FileData.Length; i++)
-            {
-                FileDataList.Add(FileData[i].ToString());
-            }
-
-            String[] FileDataArray = FileDataList.ToArray();
-            LexerObj.Interpret(FileDataArray);
+            LexerObj.Interpret(FileData.ToArray());
         }
     }
 }

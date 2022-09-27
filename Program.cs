@@ -6,6 +6,7 @@ namespace Fiary
     {
         async static Task Main(String[] args)
         {
+            Console.Clear();
             ErrorHandler ErrorHandlerObj = new ErrorHandler();
             FileHandler FileHandlerObj = new FileHandler();
             Files FilesObj = new Files();
