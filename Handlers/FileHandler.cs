@@ -27,8 +27,13 @@ namespace Fiary
                 Console.WriteLine($"File: \"{FileName}\" does not contain any data.");
                 return;
             }
-            
-            LexerObj.Interpret(FileData.ToArray());
+
+            List<KeyValuePair<dynamic, dynamic>> ReturnedData = LexerObj.Interpret(FileData.ToArray());
+
+            for (int i = 0; i < ReturnedData.Count; i++)
+            {
+                Console.WriteLine(ReturnedData[i]);
+            }
         }
     }
 }
