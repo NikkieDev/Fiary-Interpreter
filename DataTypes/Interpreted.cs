@@ -2,9 +2,9 @@ using System;
 
 namespace Fiary
 {
-    class _String
+    internal class _String
     {
-        String Name = "";
-        String Value = "";
+        public String _Name {get; set;} = "";
+        public String _Value{get; set;} = "";
     }
 }

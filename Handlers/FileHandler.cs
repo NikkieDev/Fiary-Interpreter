@@ -28,9 +28,9 @@ namespace Fiary
                 return;
             }
 
-            List<KeyValuePair<dynamic, dynamic>> ReturnedData = LexerObj.Interpret(FileData.ToArray());
+            dynamic[] ReturnedData = LexerObj.Interpret(FileData.ToArray());
 
-            for (int i = 0; i < ReturnedData.Count; i++)
+            for (int i = 0; i < ReturnedData.Length; i++)
             {
                 Console.WriteLine(ReturnedData[i]);
             }
