@@ -14,12 +14,19 @@ namespace Fiary
                 switch (Data[i])
                 {
                     case ("string"):
+                        String Value = "";
                         String Name = ParserObj.ParseStringName(Data[i+1]);
-                        String Value = ParserObj.ParseStringValue(Data[i+2]);
-
                         _String NewString = new _String();
+
+                        for (int j = 2; j < Data.Length; j++)
+                        {
+                            Value += Data[j] + " ";
+                        }
+
+                        String _Value = ParserObj.ParseStringValue(Value);
+
                         NewString._Name = Name;
-                        NewString._Value = Value;
+                        NewString._Value = _Value;
                         InterpretedList.Add(NewString);
                         break;
                     case ("int"):

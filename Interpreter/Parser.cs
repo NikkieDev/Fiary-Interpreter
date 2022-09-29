@@ -6,12 +6,12 @@ namespace Fiary
     {
         internal String ParseStringName(String Data)
         {
-            String Name = Data.Remove(Data.Length);
+            String Name = Data.Remove(Data.Length-1);
             return Name;
         }
         internal String ParseStringValue(String Data)
         {
-            String Value = Data.Remove(Data.Length);
+            String Value = Data.Remove(Data.IndexOf(";"));
             return Value;
         }
     }
