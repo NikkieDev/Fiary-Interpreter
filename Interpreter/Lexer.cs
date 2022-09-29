@@ -6,6 +6,7 @@ namespace Fiary
     {
         internal dynamic[] Interpret(String[] Data)
         {
+            Parser ParserObj = new Parser();
             List<dynamic> InterpretedList = new List<dynamic>();
 
             for (int i = 0; i < Data.Length; i++)
@@ -13,9 +14,12 @@ namespace Fiary
                 switch (Data[i])
                 {
                     case ("string"):
+                        String Name = ParserObj.ParseStringName(Data[i+1]);
+                        String Value = ParserObj.ParseStringValue(Data[i+2]);
+
                         _String NewString = new _String();
-                        NewString._Name = Data[i+1];
-                        NewString._Value = Data[i+2];
+                        NewString._Name = Name;
+                        NewString._Value = Value;
                         InterpretedList.Add(NewString);
                         break;
                     case ("int"):
