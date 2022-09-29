@@ -13,7 +13,7 @@ namespace Fiary
 
             try
             {
-                String[] DataArray = File.ReadAllLines(FileName);
+                String[] DataArray = File.ReadAllText(FileName).Split(" ");
                 for (int i = 0; i < DataArray.Length; i++)
                     FileData.Add(DataArray[i]);
             } catch (FileNotFoundException e)
@@ -28,8 +28,7 @@ namespace Fiary
                 return;
             }
 
-            List<String> FileDataList = new List<String>();
-
+            // List<String> FileDataList = new List<String>();
             LexerObj.Interpret(FileData.ToArray());
         }
     }

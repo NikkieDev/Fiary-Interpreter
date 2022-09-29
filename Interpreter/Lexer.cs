@@ -6,11 +6,37 @@ namespace Fiary
     {
         internal List<String> Interpret(String[] Data)
         {
-            List<String> InterpretedData = new List<String>();
+            List<KeyValuePair<dynamic, dynamic>> InterpretedData = new List<KeyValuePair<dynamic, dynamic>>();
             
-            foreach (String line in Data)
+            // foreach (String word in Data)
+            // {
+            //     switch (word)
+            //     {
+            //         case ("string"):
+
+            //             break;
+            //         case ("int"):
+            //             break;
+            //         case ("float"):
+            //             break;
+            //         case ("bool"):
+            //             break;
+            //     }
+            // }
+            for (int i = 0; i < Data.Length; i++)
             {
-                Console.WriteLine(line[0]);
+                switch (Data[i])
+                {
+                    case ("string"):
+                        InterpretedData.Add(Data[i]+1, Data[i]+2);
+                        break;
+                    case ("int"):
+                        break;
+                    case ("float"):
+                        break;
+                    case ("bool"):
+                        break;
+                }
             }
 
             return InterpretedData;
