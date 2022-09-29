@@ -4,7 +4,7 @@ namespace Fiary
 {
     class Lexer
     {
-        internal List<String> Interpret(String[] Data)
+        internal List<KeyValuePair<dynamic,dynamic>> Interpret(String[] Data)
         {
             List<KeyValuePair<dynamic, dynamic>> InterpretedData = new List<KeyValuePair<dynamic, dynamic>>();
             
@@ -28,7 +28,8 @@ namespace Fiary
                 switch (Data[i])
                 {
                     case ("string"):
-                        InterpretedData.Add(Data[i]+1, Data[i]+2);
+                        KeyValuePair<dynamic, dynamic> StringPair = new KeyValuePair<dynamic, dynamic>(Data[i+1], Data[i+2]);
+                        InterpretedData.Add(StringPair);
                         break;
                     case ("int"):
                         break;
