@@ -32,7 +32,7 @@ namespace Fiary
 
             for (int i = 0; i < ReturnedData.Length; i++)
             {
-                Console.WriteLine(ReturnedData[i]);
+                Console.WriteLine(ReturnedData[i]._Name);
             }
         }
     }
