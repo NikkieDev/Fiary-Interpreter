@@ -30,7 +30,5 @@ namespace Fiary
             }
             return $"Created error log file at: \"{Dir}/errorlog{i}.txt\"";
         }
-
-        // loop through amount of files. add i to filename
     }
 }
